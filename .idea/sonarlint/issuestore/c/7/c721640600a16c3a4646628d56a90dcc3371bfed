@@ -1,0 +1,13 @@
+
+l
+java:S2095."OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ù§Âœ8æÕª¿0
+l
+java:S2095*"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Õ›‚38åÕª¿0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ğ“¶šıÿÿÿÿ8ëÕª¿0
+T	java:S106"9Replace this use of System.out or System.err by a logger.(²åñi8íÕª¿0
+U	java:S106("9Replace this use of System.out or System.err by a logger.(¼æÛÖ8ğÕª¿0
+…
+java:S2118+"cMake the "org.demo.core.serialization.SerializationExample" class "Serializable" or don't write it.(ğû Çûÿÿÿÿ8™»’ª¿0
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(ŠÖ®êıÿÿÿÿ8õÕª¿0
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8»’ª¿0
