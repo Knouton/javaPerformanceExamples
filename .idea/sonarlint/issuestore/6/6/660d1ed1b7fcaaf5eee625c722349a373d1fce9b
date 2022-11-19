@@ -1,14 +1,0 @@
-
-L
-java:S3740"/Provide the parametrized type for this generic.(æë™¶8¨¿û´¼0
-L
-java:S3740"/Provide the parametrized type for this generic.(æë™¶8¨¿û´¼0
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(¢˜¯Ãøÿÿÿÿ
-W
-java:S1118	":Add a private constructor to hide the implicit public one.(Øêëâ8·¡õ´¼0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(öõõ²8øõ´¼0
-Y
-java:S1854"<Remove this useless assignment to local variable "callable".(æë™¶8Şãú´¼0
-J
-java:S1481"-Remove this unused "callable" local variable.(æë™¶8àãú´¼0

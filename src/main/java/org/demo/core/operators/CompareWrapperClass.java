@@ -11,6 +11,7 @@ public class CompareWrapperClass {
 		Integer intA = 127;
 		Integer intB = 127;
 		//т.к.  для int в диапазоне от -128 до + 127 объекты-обёртки кешируются
+		//фактически вызывается java.lang.Integer.valueOf(int)
 		//размер можно настроить через: -Djava.lang.Integer.IntegerCache.high=<size>
 		//то получаем true при сравнивании
 		System.out.println("Int в диапазоне хеширования: " + (intA == intB));
