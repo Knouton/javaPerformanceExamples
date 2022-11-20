@@ -4,15 +4,15 @@ package org.demo.core.exceptions;
 public class LambdaExceptionExample {
 
 	@FunctionalInterface
-	interface IDivNumbers {
+	interface DivNumbers {
 		// Объявить метод, который делит два числа
 		double Division(double a, double b);
 	}
 
 	public static void main(String[] args) {
 
-		// 1. Объявить ссылку на IDivNumbers
-		IDivNumbers ref;
+		// 1. Объявить ссылку на DivNumbers
+		DivNumbers ref;
 
 		// 2. Реализовать лямбда-выражение, которое делит два числа и
 		//    при необходимости генерирует исключение
