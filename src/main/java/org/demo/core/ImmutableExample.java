@@ -18,8 +18,10 @@ public final class ImmutableExample {
 
 	public static void main(String[] args) {
 
-		ImmutableExample obj = new ImmutableExample("immutableExample");
+		final ImmutableExample obj = new ImmutableExample("immutableExample");
 		System.out.println(obj.getName());
+		//нельзя поменять ссылку объекту:
+		//obj = new ImmutableExample("immutableExample2");
 
 		// нет способа обновить имя после создания объекта
 		// obj.setName ("new mkyong");
