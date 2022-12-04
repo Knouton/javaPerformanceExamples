@@ -1,8 +1,10 @@
 package org.demo.streamApi;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -43,8 +45,32 @@ public class StreamApiExample {
 		System.out.println("ArrayList со строками в которых меньше 5 символов:");
 		stringArrayList.forEach(System.out::println);
 
+		//reduce
+		System.out.println("reduce example: ");
+		Stream<String> wordsStream = Stream.of("мама", "мыла", "раму");
+		Optional<String> sentence = wordsStream.reduce((x, y)-> x + " " + y);
+		System.out.println(sentence.get());
 
+		//4.6.8	Stream API	Stream. Операторы поиска
+		System.out.println("Операторы поиска: ");
+		ArrayList<String> chars = new ArrayList<String>();
+		chars.addAll(Arrays.asList("AAA", "B", "C", "C", "D", "A", "QQQ", "Ooooo","oooo"));
 
+		Optional<String> first = chars.stream()
+				.findFirst();
+		System.out.println(first.get());
+
+		Optional<String> any = chars.stream()
+				.filter(str -> str.equals("C"))
+				.findAny();
+		System.out.println(any.get());
+
+		//4.6.9	Stream API	Stream. Оператор sorted()
+
+		chars.stream()
+				.sorted()
+				.filter(str -> str.length() > 1)
+				.forEach(str -> System.out.println(str));
 	}
 
 	private static Stream<String> getStreamSplitStrings(String stringToSplit, String patternForSplit){
